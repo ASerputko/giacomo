@@ -1,0 +1,14 @@
+<h1>Search</h1>
+
+<%= form_tag root_path, method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
+
+<div id="persones">
+<% @persones.each do |persone| %>
+  <p><%= persone.first_name %> <%= persone.last_name %></p>
+<% end %>
+</div>

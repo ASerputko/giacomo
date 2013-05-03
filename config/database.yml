@@ -1,0 +1,14 @@
+development: &defaults
+  adapter: postgresql
+  database: giacomo_dev
+  username: giacomo
+  password: giacomo
+  host: 127.0.0.1
+
+test:
+  <<: *defaults
+  database: giacomo_test
+
+production:
+  <<: *defaults
+  database: giacomo
