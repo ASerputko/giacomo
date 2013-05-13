@@ -1,15 +1,14 @@
 source "http://rubygems.org"
 gem "pg"
 gem "rails", "3.2.3"
-gem "haml"
-gem "rails3-generators"
+gem "mechanize", "~> 2.6.0"
 
 gem 'jquery-rails'
 gem 'therubyracer'
 
 group :assets do
   gem 'sass-rails', "~> 3.2.3"
-#  gem 'coffee-rails', "~> 3.2.3"
+	gem 'coffee-rails', "~> 3.2.2"
   gem 'uglifier'
 end
 
@@ -21,9 +20,6 @@ group :test do
   gem "rspec"
   gem "rspec-rails"
   gem "capybara"
-  gem "launchy"
-  gem "factory_girl"
-  gem "mocha"
 end
 
 gem 'pg_search'
