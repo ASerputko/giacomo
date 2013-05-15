@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe Sdn do
+
 	before { @sdn = Sdn.new(uid: 1, first_name: "Andrew", last_name: "Serputko", sdn_type: "Entity") }
 
 	subject { @sdn }
